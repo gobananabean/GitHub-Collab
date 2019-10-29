@@ -6,26 +6,92 @@
 	</head>
 	<body>
 		<h1> Club Popcorn Sales </h1>
-		<form
-			class="form"
-			
-			method="post"
-			enctype="text/plain"
-			name="EmailForm">
-	Buyer's Name: <input type="text" size="40" placeholder="Name Required"> <br><br>
-	Street Address: <input type="text" size="60"> <br><br>
-	City, State, Zip: <input type="text" size="59"> <br><br>
-		<h2> Product Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Price &ensp;&ensp;&ensp; Quantity </h2>
+		Buyer's Name: <input type="text" size="40" placeholder="Name Required"> <br><br>
+		Street Address: <input type="text" size="60"> <br><br>
+		City, State, Zip: <input type="text" size="59"> <br><br>
 
-	Unpopped Popcorn (1 lb.) $3.00 <input type="number" size="1" id="quantityUnpopped" name="quantityUnpopped"><br>
-	Caramel Popcorn (2 lb. canister) $3.50 <input type="number" size="1" id="quantityCaramel" name="quantityCaramel"><br>
-	Caramel Nut Popcorn (2 lb. canister) $4.50 <input type="number" size="1" id="quantityCaramelNut" name="quantityCaramelNut"><br>
-	Toffey Nut Popcorn (2 lb canister) $5.00 <input type="number" size="1" id="quantityToffey" name="quantityToffey"><br>
+		<table>
+    <tr align="center">
+        <td> Product Name </td>
+        <td> Price </td>
+        <td> Quantity </td> 
+    </tr>
+    <form name="capcuccino">
+        <tr>
+            <td>
+                Unpopped Popcorn (1 lb.)
+            </td>
+            <td align="center">
+                $3.00
+            </td>
+            <td align="center">
+                <input type="number" id="quantityUnpopped" name="quantityUnpopped" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Caramel Popcorn (2 lb. canister)
+            </td>
+            <td align="center">
+                $3.50
+            </td>
+            <td align="center">
+                <input type="number" id="quantityCaramel" name="quantityCaramel" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Caramel Nut Popcorn (2 lb. canister)
+            </td>
+            <td align="center">
+                $4.50
+            </td>
+            <td align="center">
+                <input type="number" id="quantityCaramelNut" name="quantityCaramelNut" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Toffey Nut Popcorn (2 lb. canister)
+            </td>
+            <td align="center">
+                $2.50
+            </td>
+            <td align="center">
+                <input type="number" id="quantityToffey" name="quantityToffey" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>     
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <button type="button" onclick="calculatePrice()">Update Subtotal</button>
+            </td>
+            <td>
+            </td>
+            <td>
+                <br>
+                
+                Subtotal: 
+                <input type="text"  name="orderTotal" id="orderTotal" Size=6 readonly>
+            </td>
+        </tr>
+        </form>
 
-	Subtotal: <input type="text" size="3"> <button onclick="getSubtotal()" name="updatesubtotal" id="updatesubtotal">Update Subtotal</button>
-	<br>
-	<br>
-		<h3> Payment Method </h3>
+
+
+
+
+
+
+
+
+	 	</form> </table>
+	 	
+	 	<h3> Payment Method </h3> <br>
 	Grand Total: <input type="text" size="10">
 	<br>
 	<br>
@@ -39,16 +105,6 @@
 
 
   	<button>Submit Order</button>&ensp;&ensp;<button onclick="clearForm()" id="clearform">Clear Form</button>
-
-
-
-
-
-
-
-
-
-	 	</form>
 
 
 
