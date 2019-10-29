@@ -20,3 +20,19 @@ function calculatePrice()
             //print value to orderTotal 
             document.getElementById("orderTotal").value=total;
         }
+
+function grandTotal(total){
+  takeaway=document.getElementById("takeaway").value;
+  if(takeaway){
+  //  APPLY credit fee
+    total=(total+creditFee) * ri_tax;
+}
+else if(check){
+  //  Only ri tax fee
+    total= total * ri_tax;
+}
+}
+
+function clearForm(){
+  document.getElementById("clearForm").reset();
+}

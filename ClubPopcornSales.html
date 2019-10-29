@@ -16,7 +16,12 @@
         <td> Price </td>
         <td> Quantity </td> 
     </tr>
-    <form name="capcuccino">
+    <form name="Popcorn"
+    		class="form"
+    		form action="MAILTO:christinakasper@my.uri.edu"
+			method="post"
+			enctype="text/plain"
+			name="EmailForm">
         <tr>
             <td>
                 Unpopped Popcorn (1 lb.)
@@ -68,6 +73,8 @@
         <tr>
             <td>
                 <br>
+                Subtotal: 
+                <input type="text"  name="orderTotal" id="orderTotal" Size=6 readonly>
                 <button type="button" onclick="calculatePrice()">Update Subtotal</button>
             </td>
             <td>
@@ -75,8 +82,6 @@
             <td>
                 <br>
                 
-                Subtotal: 
-                <input type="text"  name="orderTotal" id="orderTotal" Size=6 readonly>
             </td>
         </tr>
         </form>
@@ -104,7 +109,7 @@
   	<br>
 
 
-  	<button>Submit Order</button>&ensp;&ensp;<button onclick="clearForm()" id="clearform">Clear Form</button>
+  	<button>Submit Order</button>&ensp;&ensp;<button onclick="clearForm()" id="clearForm">Clear Form</button>
 
 
 
