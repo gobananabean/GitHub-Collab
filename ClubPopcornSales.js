@@ -28,7 +28,7 @@ function grandTotal(total) {
     total=(total+creditFee) * ri_tax;
 }
     else if(check) {
-        confirm("Are you sure?");
+        confirm("Are you sure?"); 
   
     total= total * ri_tax;
 } 
