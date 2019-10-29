@@ -6,9 +6,9 @@
 	</head>
 	<body>
 		<h1> Club Popcorn Sales </h1>
-		<form 
+		<form
 			class="form"
-			form action="MAILTO:christinakasper@my.uri.edu"
+			
 			method="post"
 			enctype="text/plain"
 			name="EmailForm">
@@ -16,29 +16,29 @@
 	Street Address: <input type="text" size="60"> <br><br>
 	City, State, Zip: <input type="text" size="59"> <br><br>
 		<h2> Product Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Price &ensp;&ensp;&ensp; Quantity </h2>
-	Unpopped Popcorn (1 lb.) $3.00 <input type="text" size="1"><br>
-	Caramel Popcorn (2 lb. canister) $3.50 <input type="text" size="1"><br>
-	Caramel Nut Popcorn (2 lb. canister) $4.50 <input type="text" size="1"><br>
-	Toffey Nut Popcorn (2 lb canister) $5.00 <input type="text" size="1"><br>
-	Subtotal: <input type="text" size="3"> <button>Update Subtotal</button>
+
+	Unpopped Popcorn (1 lb.) $3.00 <input type="number" size="1" id="quantityUnpopped" name="quantityUnpopped"><br>
+	Caramel Popcorn (2 lb. canister) $3.50 <input type="number" size="1" id="quantityCaramel" name="quantityCaramel"><br>
+	Caramel Nut Popcorn (2 lb. canister) $4.50 <input type="number" size="1" id="quantityCaramelNut" name="quantityCaramelNut"><br>
+	Toffey Nut Popcorn (2 lb canister) $5.00 <input type="number" size="1" id="quantityToffey" name="quantityToffey"><br>
+
+	Subtotal: <input type="text" size="3"> <button onclick="getSubtotal()" name="updatesubtotal" id="updatesubtotal">Update Subtotal</button>
 	<br>
 	<br>
 		<h3> Payment Method </h3>
 	Grand Total: <input type="text" size="10">
 	<br>
-	<input type="radio" name="cardtype" value="Visa" checked> Visa
+	<br>
+	<input type="radio" name="cardtype" value="Visa"> Visa
   	<input type="radio" name="cardtype" value="MasterCard"> MasterCard
-  	<input type="radio" name="cardtype" value="Disocver"> Discover
+  	<input type="radio" name="cardtype" value="Discover"> Discover
   	<input type="radio" name="cardtype" value="American Express"> American Express
-  	<input type="radio" name="cardtype" value="Check"> Check
+  	<input type="radio" name="check" value="Check"> Check
   	<br>
   	<br>
-  	<button>Submit Order</button>&ensp;&ensp;<button>Clear Form</button>
 
 
-
-
-
+  	<button>Submit Order</button>&ensp;&ensp;<button onclick="clearForm()" id="clearform">Clear Form</button>
 
 
 
