@@ -1,10 +1,10 @@
 function calculatePrice()
             {
-            //select data  
+              
             var unpopped=3.00;
             var caramel=3.50;
             var caramelNut=4.50;
-            var toffey=5.00;
+            var toffee=5.00;
             var total=0;
             var creditFee=2.50;
             var ri_tax=0.07;
@@ -14,25 +14,27 @@ function calculatePrice()
             var quantityCaramelNut = document.getElementById("quantityCaramelNut").value;
             var quantityToffee = document.getElementById("quantityToffee").value;
 
-            //calculate final cost  
+              
             var total = (quantityUnpopped * unpopped) + (quantityCaramal * caramel) + (quantityCaramelNut * caramelNut) + (quantityToffee * toffee); 
 
-            //print value to orderTotal 
+            
             document.getElementById("orderTotal").value=total;
         }
 
-function grandTotal(total){
-  takeaway=document.getElementById("takeaway").value;
-  if(takeaway){
-  //  APPLY credit fee
+function grandTotal(total) {
+     
+    if() {
+ 
     total=(total+creditFee) * ri_tax;
 }
-else if(check){
-  //  Only ri tax fee
+    else if(check) {
+        confirm("Are you sure?");
+  
     total= total * ri_tax;
-}
+} 
 }
 
-function clearForm(){
+
+function clearForm() {
   document.getElementById("clearForm").reset();
 }
