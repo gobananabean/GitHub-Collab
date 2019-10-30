@@ -1,3 +1,4 @@
+
 function calculatePrice()
             {
               
@@ -9,21 +10,20 @@ function calculatePrice()
             var creditFee=2.50;
             var ri_tax=0.07;
 
-            var quantityUnpopped = document.getElementById("quantityUnpopped").value;
-            var quantityCaramel = document.getElementById("quantityCaramel").value;
-            var quantityCaramelNut = document.getElementById("quantityCaramelNut").value;
-            var quantityToffee = document.getElementById("quantityToffee").value;
+            var quantityUnpopped= document.getElementById("quantityUnpopped").value;
 
-              
-            var total = (quantityUnpopped * unpopped) + (quantityCaramal * caramel) + (quantityCaramelNut * caramelNut) + (quantityToffee * toffee); 
 
-            
-            document.getElementById("orderTotal").value=total;
+            var quantityToffee= document.getElementById("quantityToffey").value;
+                 
+            var total = (quantityUnpopped * unpopped) + (quantityCaramel * caramel) + (quantityCaramelNut * caramelNut) + (quantityToffee * toffee); 
+
+            document.getElementById("orderTotal").value = total;
+
         }
 
 function grandTotal(total) {
      
-    if() {
+    if(true) {
  
     total=(total+creditFee) * ri_tax;
 }
@@ -35,6 +35,9 @@ function grandTotal(total) {
 }
 
 
+
+
 function clearForm() {
   document.getElementById("clearForm").reset();
 }
+
