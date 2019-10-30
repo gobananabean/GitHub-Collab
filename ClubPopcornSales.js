@@ -12,6 +12,9 @@ function calculatePrice()
 
             var quantityUnpopped= document.getElementById("quantityUnpopped").value;
 
+            var quantityCaramel= document.getElementById("quantityCaramel").value;
+
+            var quantityCaramelNut= document.getElementById("quantityCaramelNut").value;
 
             var quantityToffee= document.getElementById("quantityToffey").value;
                  
